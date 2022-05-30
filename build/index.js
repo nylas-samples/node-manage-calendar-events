@@ -1,10 +1,15 @@
-import 'dotenv/config';
-import Nylas from "nylas";
-Nylas.config({
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-});
-const nylas = Nylas.with(process.env.ACCESS_TOKEN);
-const currentAccount = await nylas.account.get();
-// @ts-ignore
-console.log({ currentAccount });
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const listCalendars_1 = __importDefault(require("./listCalendars"));
+// import listCalendarEvents from './listCalendarEvents';
+// import createCalendarEvent from './createCalendarEvent';
+// import updateCalendarEvent from './updateCalendarEvent';
+// import deleteCalendarEvent from './deleteCalendarEvent';
+(0, listCalendars_1.default)();
+// listCalendarEvents();
+// createCalendarEvent();
+// updateCalendarEvent();
+// deleteCalendarEvent();

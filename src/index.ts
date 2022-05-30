@@ -1,14 +1,11 @@
-import 'dotenv/config';
-import Nylas from "nylas"
+import listCalendars from './listCalendars';
+// import listCalendarEvents from './listCalendarEvents';
+// import createCalendarEvent from './createCalendarEvent';
+// import updateCalendarEvent from './updateCalendarEvent';
+// import deleteCalendarEvent from './deleteCalendarEvent';
 
-Nylas.config({
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-});
-
-const nylas = Nylas.with(process.env.ACCESS_TOKEN);
-
-const currentAccount = await nylas.account.get();
-
-// @ts-ignore
-console.log({ currentAccount })
+listCalendars();
+// listCalendarEvents();
+// createCalendarEvent();
+// updateCalendarEvent();
+// deleteCalendarEvent();

@@ -1,0 +1,53 @@
+yarn run v1.22.18
+$ node build/index.js
+{
+  id: '83yk9jf9rqkqtojx9c6w5n7b8',
+  title: '⌨️ Code',
+  description: '',
+  when: When {
+    object: 'timespan',
+    startTime: 1654032600,
+    endTime: 1654034400
+  }
+}
+{
+  id: 'bn0obqh9p5et6ehk6zj6uopve',
+  title: '☕☕ More Coffee',
+  description: '',
+  when: When {
+    object: 'timespan',
+    startTime: 1654034400,
+    endTime: 1654036200
+  }
+}
+{
+  id: '8vmgcumginn2qry88vzky3nt6',
+  title: '⌨️⌨️ More Code',
+  description: '',
+  when: When {
+    object: 'timespan',
+    startTime: 1654036200,
+    endTime: 1654038000
+  }
+}
+{
+  id: '9ybox5avzr8s2wmr9ti748swr',
+  title: '🚢 Ship w/ Nylas',
+  description: '',
+  when: When {
+    object: 'timespan',
+    startTime: 1654038000,
+    endTime: 1654039800
+  }
+}
+{
+  id: '3akwn16hfu9wp81jssjkcd6rx',
+  title: '🚢 🚢 Ship more!',
+  description: '',
+  when: When {
+    object: 'timespan',
+    startTime: 1654039800,
+    endTime: 1654041600
+  }
+}
+Done in 0.80s.

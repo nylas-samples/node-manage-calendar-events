@@ -1,6 +1,6 @@
-# node-starter-repo
+# node-manage-calendar-events
 
-This sample repo will show you how to easily to get started with the Nylas Node.js SDK.
+This sample repo will show you how to easily work with calendars using the Nylas Node.js SDK.
 
 ## Setup
 
@@ -35,24 +35,24 @@ $ npm run build
 $ node build/index.js
 ```
 
-When you run the script, you'll get account information output in your terminal:
+The `index.js` consists of functions for different calendar functions:
+- `listCalendars` lists all calendars
+- `listCalendarEvents` list events for a specific calendar
+- `createCalendarEvent` creates a new calendar event
+- `updateCalendarEvent` updates a calendar event
+- `deleteCalendarEvent` deletes a calendar event
 
-```bash
-{
-    ...
-    id: '<ACCOUNT_ID>',
-    accountId: '<ACCOUNT_ID>',
-    object: 'account',
-    name: '<ACCOUNT_NAME>',
-    emailAddress: '<ACCOUNT_EMAIL>',
-    provider: '<EMAIL_PROVIDER>',
-    organizationUnit: 'label',
-    syncState: 'running',
-    linkedAt: 2022-04-21T14:48:14.000Z,
-    accessToken: ''
-  }
-}
+By commenting out the function (and import), you can run the specific function as follows:
+
 ```
+import listCalendars from './listCalendars';
+\\...commented out imports
+
+listCalendars();
+\\...commented out function calls
+```
+
+Be sure to check if any specific data is required. For example `create-calendar-event.ts` requires a few pieces of data like replacing `<CALENDAR_ID>`.
 
 ## Learn more
 
