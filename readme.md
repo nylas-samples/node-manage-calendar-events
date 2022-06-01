@@ -52,7 +52,7 @@ listCalendars();
 \\...commented out function calls
 ```
 
-Be sure to check if any specific data is required. For example `create-calendar-event.ts` requires a few pieces of data like replacing `<CALENDAR_ID>`.
+Be sure to check if any specific data is required. For example `createCalendarEvent.ts` requires a few pieces of data like replacing `<CALENDAR_ID>`.
 
 ## Learn more
 
